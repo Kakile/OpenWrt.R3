@@ -1,0 +1,256 @@
+[    0.000000] Linux version 5.10.221 (builder@buildhost) (mipsel-openwrt-linux-musl-gcc (OpenWrt GCC 11.2.0 r20341-591b7e93d3) 11.2.0, GNU ld (GNU Binutils) 2.37) #0 Mon Jul 15 22:25:54 2024
+[    0.000000] Board has DDR2
+[    0.000000] Analog PMU set to hw control
+[    0.000000] Digital PMU set to hw control
+[    0.000000] SoC Type: MediaTek MT7620A ver:2 eco:6
+[    0.000000] printk: bootconsole [early0] enabled
+[    0.000000] CPU0 revision is: 00019650 (MIPS 24KEc)
+[    0.000000] MIPS: machine is Xiaomi Mi Router R3
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000000000-0x0000000007ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x0000000007ffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x0000000007ffffff]
+[    0.000000] On node 0 totalpages: 32768
+[    0.000000]   Normal zone: 288 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 32768 pages, LIFO batch:7
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 32480
+[    0.000000] Kernel command line: console=ttyS0,115200 rootfstype=squashfs,jffs2
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes, linear)
+[    0.000000] Writing ErrCtl register=0000e00f
+[    0.000000] Readback ErrCtl register=0000e00f
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 120804K/131072K available (5665K kernel code, 617K rwdata, 1192K rodata, 1220K init, 214K bss, 10268K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] NR_IRQS: 256
+[    0.000000] CPU Clock: 580MHz
+[    0.000000] clocksource: systick: mask: 0xffff max_cycles: 0xffff, max_idle_ns: 583261500 ns
+[    0.000000] systick: enable autosleep mode
+[    0.000000] systick: running - mult: 214748, shift: 32
+[    0.000000] clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6590553264 ns
+[    0.000012] sched_clock: 32 bits at 290MHz, resolution 3ns, wraps every 7405115902ns
+[    0.007696] Calibrating delay loop... 385.84 BogoMIPS (lpj=1929216)
+[    0.073636] pid_max: default: 32768 minimum: 301
+[    0.078328] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.085385] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.095618] dyndbg: Ignore empty _ddebug table in a CONFIG_DYNAMIC_DEBUG_CORE build
+[    0.108187] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.117756] futex hash table entries: 256 (order: -1, 3072 bytes, linear)
+[    0.124449] pinctrl core: initialized pinctrl subsystem
+[    0.130767] NET: Registered protocol family 16
+[    0.626645] PCI host bridge /pcie@10140000 ranges:
+[    0.631277]  MEM 0x0000000020000000..0x000000002fffffff
+[    0.636318]   IO 0x0000000010160000..0x000000001016ffff
+[    0.697546] rt2880_gpio 10000600.gpio: registering 24 gpios
+[    0.703026] rt2880_gpio 10000600.gpio: registering 24 irq handlers
+[    0.709355] rt2880_gpio 10000638.gpio: registering 16 gpios
+[    0.714814] rt2880_gpio 10000638.gpio: registering 16 irq handlers
+[    0.722581] PCI host bridge to bus 0000:00
+[    0.726585] pci_bus 0000:00: root bus resource [mem 0x20000000-0x2fffffff]
+[    0.733200] pci_bus 0000:00: root bus resource [io  0x10160000-0x1016ffff]
+[    0.739885] pci_bus 0000:00: root bus resource [??? 0x00000000 flags 0x0]
+[    0.746468] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+[    0.754229] pci 0000:00:00.0: [1814:0801] type 01 class 0x060400
+[    0.760014] pci 0000:00:00.0: reg 0x10: [mem 0x00000000-0x7fffffff]
+[    0.766097] pci 0000:00:00.0: reg 0x14: [mem 0x00000000-0x0000ffff]
+[    0.772251] pci 0000:00:00.0: supports D1
+[    0.776075] pci 0000:00:00.0: PME# supported from D0 D1 D3hot
+[    0.783946] pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    0.791967] pci 0000:01:00.0: [14c3:7662] type 00 class 0x028000
+[    0.797782] pci 0000:01:00.0: reg 0x10: [mem 0x00000000-0x000fffff 64bit]
+[    0.804407] pci 0000:01:00.0: reg 0x30: [mem 0x00000000-0x0000ffff pref]
+[    0.810963] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+[    0.819104] pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 01
+[    0.825478] pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 01
+[    0.831970] pci 0000:00:00.0: BAR 0: no space for [mem size 0x80000000]
+[    0.838331] pci 0000:00:00.0: BAR 0: failed to assign [mem size 0x80000000]
+[    0.845106] pci 0000:00:00.0: BAR 8: assigned [mem 0x20000000-0x200fffff]
+[    0.851688] pci 0000:00:00.0: BAR 9: assigned [mem 0x20100000-0x201fffff pref]
+[    0.858710] pci 0000:00:00.0: BAR 1: assigned [mem 0x20200000-0x2020ffff]
+[    0.865307] pci 0000:01:00.0: BAR 0: assigned [mem 0x20000000-0x200fffff 64bit]
+[    0.872417] pci 0000:01:00.0: BAR 6: assigned [mem 0x20100000-0x2010ffff pref]
+[    0.879409] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    0.884240] pci 0000:00:00.0:   bridge window [mem 0x20000000-0x200fffff]
+[    0.890821] pci 0000:00:00.0:   bridge window [mem 0x20100000-0x201fffff pref]
+[    0.907079] clocksource: Switched to clocksource systick
+[    0.913724] NET: Registered protocol family 2
+[    0.918333] IP idents hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.926117] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.934310] TCP established hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.941740] TCP bind hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.948557] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.954879] UDP hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.961238] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.968329] NET: Registered protocol family 1
+[    0.972584] PCI: CLS 0 bytes, default 32
+[    0.981996] rt-timer 10000100.timer: maximum frequency is 1220Hz
+[    0.991106] workingset: timestamp_bits=14 max_order=15 bucket_order=1
+[    1.002897] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.008571] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    1.021720] Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+[    1.029063] printk: console [ttyS0] disabled
+[    1.033257] 10000c00.uartlite: ttyS0 at MMIO 0x10000c00 (irq = 20, base_baud = 2500000) is a Palmchip BK-3103
+[    1.042956] printk: console [ttyS0] enabled
+[    1.051407] printk: bootconsole [early0] disabled
+[    1.062370] !!! nand page size = 2048, addr len=4
+[    1.075436] mtk_nand_probe: alloc 1400, at (ptrval) , btt((ptrval), 100), ranfc_mtd:(ptrval)
+[    1.084211] 10 fixed-partitions partitions found on MTD device ra_nfc
+[    1.090815] Creating 10 MTD partitions on "ra_nfc":
+[    1.095819] 0x000000000000-0x000000040000 : "Bootloader"
+[    1.103658] 0x000000040000-0x000000080000 : "Config"
+[    1.110129] 0x000000080000-0x0000000c0000 : "Bdata"
+[    1.118422] 0x0000000c0000-0x000000100000 : "factory"
+[    1.124923] 0x000000100000-0x000000140000 : "crash"
+[    1.133168] 0x000000140000-0x000000180000 : "crash_syslog"
+[    1.140299] 0x000000180000-0x000000200000 : "reserved0"
+[    1.148875] 0x000000200000-0x000000600000 : "kernel_stock"
+[    1.156604] 0x000000600000-0x000000a00000 : "kernel"
+[    1.162004] nand_block_checkbad: offs:6e0000 tag: BAD 
+[    1.170979] 0x000000a00000-0x000008000000 : "ubi"
+[    1.233275] gsw: setting port4 to ephy mode
+[    1.237801] ralink_soc_eth 10100000.ethernet: generated random MAC address 02:0b:c1:05:5f:73
+[    1.246423] ralink_soc_eth 10100000.ethernet: mdio-bus disabled
+[    1.252738] ralink_soc_eth 10100000.ethernet: loaded mt7620 driver
+[    1.259888] ralink_soc_eth 10100000.ethernet eth0: mediatek frame engine at 0xb0100000, irq 5
+[    1.269341] rt2880_wdt 10000120.watchdog: Initialized
+[    1.275893] NET: Registered protocol family 10
+[    1.286854] Segment Routing with IPv6
+[    1.290859] NET: Registered protocol family 17
+[    1.295502] 8021q: 802.1Q VLAN Support v1.8
+[    1.302510] UBI: auto-attach mtd9
+[    1.305937] ubi0: attaching mtd9
+[    1.845943] ubi0: scanning is finished
+[    1.861149] ubi0: attached mtd9 (name "ubi", size 118 MiB)
+[    1.866770] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    1.873851] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    1.880804] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    1.887920] ubi0: good PEBs: 944, bad PEBs: 0, corrupted PEBs: 0
+[    1.894047] ubi0: user volume: 2, internal volumes: 1, max. volumes count: 128
+[    1.901430] ubi0: max/mean erase counter: 4/2, WL threshold: 4096, image sequence number: 1672705461
+[    1.910759] ubi0: available PEBs: 0, total reserved PEBs: 944, PEBs reserved for bad PEB handling: 20
+[    1.921198] ubi0: background thread "ubi_bgt0d" started, PID 308
+[    1.928893] block ubiblock0_0: created from ubi0:0(rootfs)
+[    1.934514] ubiblock: device ubiblock0_0 (rootfs) set to be root filesystem
+[    1.952557] VFS: Mounted root (squashfs filesystem) readonly on device 254:0.
+[    1.966895] Freeing unused kernel memory: 1220K
+[    1.971586] This architecture does not have kernel memory protection.
+[    1.978186] Run /sbin/init as init process
+[    1.982370]   with arguments:
+[    1.982377]     /sbin/init
+[    1.982382]   with environment:
+[    1.982388]     HOME=/
+[    1.982394]     TERM=linux
+[    2.671960] init: Console is alive
+[    2.676076] init: - watchdog -
+[    3.802050] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    3.963583] usbcore: registered new interface driver usbfs
+[    3.969381] usbcore: registered new interface driver hub
+[    3.974896] usbcore: registered new device driver usb
+[    3.989186] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    3.999472] fsl-ehci: Freescale EHCI Host controller driver
+[    4.007444] ehci-platform: EHCI generic platform driver
+[    4.023315] phy phy-usbphy.0: remote usb device wakeup disabled
+[    4.029382] phy phy-usbphy.0: UTMI 16bit 30MHz
+[    4.033917] ehci-platform 101c0000.ehci: EHCI Host Controller
+[    4.039845] ehci-platform 101c0000.ehci: new USB bus registered, assigned bus number 1
+[    4.048098] ehci-platform 101c0000.ehci: irq 26, io mem 0x101c0000
+[    4.062892] ehci-platform 101c0000.ehci: USB 2.0 started, EHCI 1.00
+[    4.070451] hub 1-0:1.0: USB hub found
+[    4.075341] hub 1-0:1.0: 1 port detected
+[    4.088308] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    4.096497] ohci-platform: OHCI generic platform driver
+[    4.102291] ohci-platform 101c1000.ohci: Generic Platform OHCI controller
+[    4.109351] ohci-platform 101c1000.ohci: new USB bus registered, assigned bus number 2
+[    4.117590] ohci-platform 101c1000.ohci: irq 26, io mem 0x101c1000
+[    4.152953] hub 2-0:1.0: USB hub found
+[    4.157718] hub 2-0:1.0: 1 port detected
+[    4.170685] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    4.182767] init: - preinit -
+[    5.291450] random: jshn: uninitialized urandom read (4 bytes read)
+[    5.416016] random: jshn: uninitialized urandom read (4 bytes read)
+[    5.641115] random: jshn: uninitialized urandom read (4 bytes read)
+[    6.526556] 8021q: adding VLAN 0 to HW filter on device eth0
+[    6.585395] random: procd: uninitialized urandom read (4 bytes read)
+[    8.231270] UBIFS (ubi0:1): Mounting in unauthenticated mode
+[    8.256043] UBIFS (ubi0:1): background thread "ubifs_bgt0_1" started, PID 455
+[    8.283673] UBIFS (ubi0:1): recovery needed
+[    8.390019] UBIFS (ubi0:1): recovery completed
+[    8.394763] UBIFS (ubi0:1): UBIFS: mounted UBI device 0, volume 1, name "rootfs_data"
+[    8.402775] UBIFS (ubi0:1): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    8.412909] UBIFS (ubi0:1): FS size: 110469120 bytes (105 MiB, 870 LEBs), journal size 5586944 bytes (5 MiB, 44 LEBs)
+[    8.423744] UBIFS (ubi0:1): reserved for root: 4952683 bytes (4836 KiB)
+[    8.430499] UBIFS (ubi0:1): media format: w5/r0 (latest is w5/r0), UUID 296BB226-C8A5-4934-8D53-C581D636EE51, small LPT model
+[    8.453649] mount_root: switching to ubifs overlay
+[    8.474371] urandom-seed: Seeding with /etc/urandom.seed
+[    8.634980] procd: - early -
+[    8.638389] procd: - watchdog -
+[    9.163005] procd: - watchdog -
+[    9.301296] procd: - ubus -
+[    9.480057] random: ubusd: uninitialized urandom read (4 bytes read)
+[    9.491353] random: ubusd: uninitialized urandom read (4 bytes read)
+[    9.498550] random: ubusd: uninitialized urandom read (4 bytes read)
+[    9.509714] procd: - init -
+[   10.715138] random: jshn: uninitialized urandom read (4 bytes read)
+[   10.785673] random: ubusd: uninitialized urandom read (4 bytes read)
+[   10.815325] random: ubus: uninitialized urandom read (4 bytes read)
+[   11.112173] kmodloader: loading kernel modules from /etc/modules.d/*
+[   11.983560] Loading modules backported from Linux version v5.15.162-0-gf45bea23c39cb
+[   11.991556] Backport generated by backports.git v5.15.162-1-0-g9fa1c65c
+[   12.301525] mt76x2e 0000:01:00.0: card - bus=0x1, slot = 0x0 irq=4
+[   12.308177] mt76x2e 0000:01:00.0: ASIC revision: 76120044
+[   12.970743] mt76x2e 0000:01:00.0: ROM patch build: 20141115060606a
+[   13.001201] mt76x2e 0000:01:00.0: Firmware Version: 0.0.00
+[   13.006820] mt76x2e 0000:01:00.0: Build: 1
+[   13.011076] mt76x2e 0000:01:00.0: Build Time: 201607111443____
+[   13.039123] mt76x2e 0000:01:00.0: Firmware running!
+[   13.046376] ieee80211 phy0: Selected rate control algorithm 'minstrel_ht'
+[   13.362790] PPP generic driver version 2.4.2
+[   13.390502] NET: Registered protocol family 24
+[   13.516092] rt2800_wmac 10180000.wmac: loaded eeprom from mtd device "factory"
+[   13.523567] ieee80211 phy1: rt2x00_set_rt: Info - RT chipset 6352, rev 0500 detected
+[   13.531536] ieee80211 phy1: rt2x00_set_rf: Info - RF chipset 7620 detected
+[   13.538715] ieee80211 phy1: Selected rate control algorithm 'minstrel_ht'
+[   13.645554] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   29.259137] random: crng init done
+[   29.262634] random: 84 urandom warning(s) missed due to ratelimiting
+[   57.723905] 8021q: adding VLAN 0 to HW filter on device eth0
+[   57.776992] device eth0 entered promiscuous mode
+[   57.805033] br-lan: port 1(eth0.1) entered blocking state
+[   57.810639] br-lan: port 1(eth0.1) entered disabled state
+[   57.816558] device eth0.1 entered promiscuous mode
+[   57.895014] br-lan: port 1(eth0.1) entered blocking state
+[   57.900618] br-lan: port 1(eth0.1) entered forwarding state
+[   58.739596] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+[   73.526847] br-lan: port 2(wlan0) entered blocking state
+[   73.532365] br-lan: port 2(wlan0) entered disabled state
+[   73.538212] device wlan0 entered promiscuous mode
+[   73.543281] br-lan: port 2(wlan0) entered blocking state
+[   73.548721] br-lan: port 2(wlan0) entered forwarding state
+[   73.709995] br-lan: port 2(wlan0) entered disabled state
+[   75.286546] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   75.293385] br-lan: port 2(wlan0) entered blocking state
+[   75.298817] br-lan: port 2(wlan0) entered forwarding state
+[   76.227082] wlan1: authenticate with a8:6b:7c:9e:22:88
+[   76.286027] wlan1: send auth to a8:6b:7c:9e:22:88 (try 1/3)
+[   76.293436] wlan1: authenticated
+[   76.339449] wlan1: associate with a8:6b:7c:9e:22:88 (try 1/3)
+[   76.353772] wlan1: RX AssocResp from a8:6b:7c:9e:22:88 (capab=0x431 status=0 aid=1)
+[   76.362279] wlan1: associated
+[   76.419632] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  145.058570] urngd: v1.0.2 started.
+[ 9158.842201] ieee80211 phy1: rt2800_wait_bbp_rf_ready: Error - BBP/RF register access failed, aborting
+[ 9158.851637] ieee80211 phy1: rt2800_config_alc: Warning - RF busy while configuring ALC
+[11076.963352] ralink_soc_eth 10100000.ethernet eth0: port 1 link up (100Mbps/Full duplex)
+[11081.853238] ralink_soc_eth 10100000.ethernet eth0: port 1 link down
+[11081.860543] br-lan: port 1(eth0.1) entered disabled state
+[11082.805646] ralink_soc_eth 10100000.ethernet eth0: port 1 link up (100Mbps/Full duplex)
+[11082.814457] br-lan: port 1(eth0.1) entered blocking state
+[11082.819992] br-lan: port 1(eth0.1) entered forwarding state
